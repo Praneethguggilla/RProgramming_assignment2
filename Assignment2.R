@@ -1,6 +1,15 @@
 # RProgramming_assignment2
 
-Code of Makecachematrix
+## Put comments here that give an overall description of what your
+## functions do
+##The first function, makeCacheMatrix creates a special "matrix", which is really a list containing a function to
+
+##1.set the value of the matrix
+##2.get the value of the matrix
+##3.set the value of the matrix
+##4.get the value of the matrix
+
+## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -16,8 +25,12 @@ makeCacheMatrix <- function(x = matrix()) {
          setInverse = setInverse,
          getInverse = getInverse)
 }
+# The following function returns the inverse of the matrix. It first checks if
+# the inverse has already been computed. If so, it gets the result and skips the
+# computation. If not, it computes the inverse, sets the value in the cache via
+# setinverse function.
 
-Code for cachesolve 
+# This function assumes that the matrix is always invertible. 
 
 cacheSolve <- function(x, ...) {
   m <- x$getInverse()
