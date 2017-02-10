@@ -31,7 +31,6 @@ makeCacheMatrix <- function(x = matrix()) {
 # setinverse function.
 
 # This function assumes that the matrix is always invertible. 
-
 cacheSolve <- function(x, ...) {
   m <- x$getInverse()
   if (!is.null(m)) {
